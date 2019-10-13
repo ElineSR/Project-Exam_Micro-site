@@ -1,0 +1,303 @@
+/* font-family: 'Permanent Marker', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+/* font-family: 'Titillium Web', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap&subset=latin-ext');
+
+
+
+/* colors */
+/* Color Theme Swatches in Hex */
+/* 
+.Deserted-terrestrial-planet-1-hex { color: #F27B13; }
+.Deserted-terrestrial-planet-2-hex { color: #F2A663; }
+.Deserted-terrestrial-planet-3-hex { color: #D95A11; }
+.Deserted-terrestrial-planet-4-hex { color: #8C310F; }
+.Deserted-terrestrial-planet-5-hex { color: #40100C; }
+
+Color Theme Swatches in RGBA.Deserted-terrestrial-planet-1-rgba { color: rgba(242, 123, 19, 1); }
+.Deserted-terrestrial-planet-2-rgba { color: rgba(242, 166, 99, 1); }
+.Deserted-terrestrial-planet-3-rgba { color: rgba(216, 90, 17, 1); }
+.Deserted-terrestrial-planet-4-rgba { color: rgba(140, 48, 15, 1); }
+.Deserted-terrestrial-planet-5-rgba { color: rgba(63, 16, 12, 1); }
+
+Color Theme Swatches in HSLA.Deserted-terrestrial-planet-1-hsla { color: hsla(28, 89, 51, 1); }
+.Deserted-terrestrial-planet-2-hsla { color: hsla(28, 84, 66, 1); }
+.Deserted-terrestrial-planet-3-hsla { color: hsla(22, 85, 45, 1); }
+.Deserted-terrestrial-planet-4-hsla { color: hsla(16, 80, 30, 1); }
+.Deserted-terrestrial-planet-5-hsla { color: hsla(5, 68, 14, 1); }
+ */
+
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: 'Titillium Web', sans-serif;
+		
+	}
+
+	html{
+		height:100%;
+		background: linear-gradient(white, #F27B13,#D95A11,#40100C,#40100C);
+		background-attachment: fixed;
+	}
+	body{
+		background-image: url(images/stars2.png);
+	}
+	
+	a{
+		text-decoration: none;
+		color: white;
+	}
+	#Landing_page_grid{
+	    display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: auto 1fr 1fr 1fr auto;
+            grid-gap: 10px;
+            max-width: 1400px;
+            margin: auto;
+            
+            
+            grid-template-areas:
+            	"nav nav nav nav nav nav"
+                "header header header header header header"
+                "section section section  aside aside aside"
+                "main main main main main main"
+                "footer footer footer footer footer footer";
+	}
+	
+	#Landing_page_grid{
+			
+		
+		}
+        header{
+            grid-area: header;
+           
+        }
+        main{
+            grid-area: main;
+        }
+        aside{
+            grid-area: aside
+        	
+        }
+        nav{
+            grid-area: nav;
+        }
+        section{
+            grid-area: section;
+        }
+        footer{
+            grid-area: footer;
+           
+           
+          
+        }
+    .main_title{
+		font-family: 'Permanent Marker', sans-seriff;	
+		color: white;	
+		font-size: 4em;	
+		transform: rotate(-15deg);	
+		text-shadow: 2px 2px  #40100C ;	
+		margin: 4rem;
+		padding: 10px;
+		text-align: left;
+	}
+     
+     
+	.intro{
+	font-size: bold;
+	margin:2em 4em;
+	
+	
+	}
+	.nav-box{
+	border-radius: 25px;
+	display: flex;
+	flex-direction: row;
+	padding: 100px
+	margin: 30px;
+	
+	}
+	
+	.box{
+	display: flex;
+	list-style: none;
+	background-color: black;
+	border: 2px;
+	padding: 5em;
+	margin: auto;
+	width: 250px;
+	height: 250px;
+	border-radius: 25px;
+	
+	
+	}
+	
+	
+	footer{
+		margin: 10px;
+		margin:auto;
+		width: 1300px;
+		font: white;
+		
+	
+	}
+	
+	.roverImg{
+	position: center;
+	width:400px;
+	margin: 1empx;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.weather{
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items:center;
+		font-family: 'Titillium Web', sans-serif;
+	}
+	.location,.temperature{
+	height: 30%;
+	width: 50%;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	nav{
+		display: flex;
+		justify-content:space-around;
+		align-items: center;
+		font-family: 'Titillium Web', sans-serif;
+	
+	}
+
+	.nav-links{
+		display: flex;
+		justify-content:space-around;
+		width: 100%;
+		padding: 1rem 0;
+
+	}
+
+
+	.nav-links a{
+		color: black;
+		text-decoration: none;
+		text-shadow: -1px -1px  white ;
+		font-weight: bold;
+		font-size: 14px;
+
+	}
+
+	.nav-links li{
+		list-style: none;
+		}
+
+
+#rover-timeline:before{
+content: '';
+position: absolute;
+width: 2px;
+height: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	footer{
+		padding: 40px;
+		background-color:  #40100C;
+
+	}
+@media only screen and (max-width: 599px) {
+  /* For mobile: */
+
+	#Landing_page_grid{
+	    display: grid;
+            grid-template-columns: repeat(1, 1fr);
+           grid-template-rows: auto 1fr 1fr 1fr 1fr auto;
+            grid-gap: 10px;
+            max-width: 1400px;
+            grid-template-areas:
+            	"nav "
+                "header "
+                "section  "
+                "aside"
+                "main "
+                "footer ";
+	}
+
+	.mob-nav div{
+		width: 25px;
+		height: 3px;
+		background-color: black;
+		margin: 5px;
+	}
+
+
+
+	.nav-links li{
+		display: none;
+	
+	}
+	.mob-nav{
+		display: block;
+		cursor: pointer;
+	}
+	
+
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+ 
+ 
+  
+  
+  
+  @media only screen and (min-width: 768px) {
+  /* For desktop: */
+
+  
+  .nav-links{
+	display: flex;
+	justify-content:space-around;
+	width: 100%;
+	padding: 1rem 0;
+  
